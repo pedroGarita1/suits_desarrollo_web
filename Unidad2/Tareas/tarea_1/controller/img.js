@@ -9,3 +9,14 @@ function obtener_id_img(id) {
         }
     });
 }
+
+function eliminar_registro(id) {
+    $.ajax({
+        type: 'POST',
+        data: "id=" + id,
+        url: "proceso/eliminar_registro.php",
+        success: (r) => {
+            location.reload();
+        }
+    })
+}

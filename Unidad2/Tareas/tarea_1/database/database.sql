@@ -6,7 +6,7 @@ CREATE TABLE t_perfil (
     paterno VARCHAR(100) NOT NULL,
     materno VARCHAR(100) NOT NULL,
     matricula VARCHAR(100) NOT NULL,
-    nacido VARCHAR(100) NOT NULL,
+    nacido DATE NOT NULL,
     especialidad VARCHAR(100) NOT NULL,
     sexo VARCHAR(11) NOT NULL,
     nombre_img VARCHAR(100) NOT NULL,

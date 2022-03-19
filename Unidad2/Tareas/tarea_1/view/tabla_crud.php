@@ -6,7 +6,7 @@
     $extencionesValidas = array('png','jpg','pdf');
 ?>
 <div class="col-md-12">
-    <table class="table table-striped">
+    <table class="table table-striped" id="tabla_registros">
         <thead>
             <tr>
                 <th scope="col">Paterno</th>
@@ -35,11 +35,13 @@
                 <td><?= $ver['sexo'];?></td>
                 <td class="text-center">
                     <span class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mostrar_img" onclick="obtener_id_img(<?= $id?>)">
-                      <div id="img_obtenida"></div>
+                      <i class="fa-solid fa-eye"></i>
                     </span>
                 </td>
                 <td><a href="view/editar_registro.php?id=<?= $ver['id']?>"><i class="fa-solid fa-user-pen"></i></a></td>
-                <td><a href="proceso/eliminar_registro.php?id=<?= $ver['id']?>"><i class="fa-solid fa-delete-left"></i></a></td>
+                <td><span class="btn btn-outline-danger btn-sm"  onclick="eliminar_registro('<?php echo $id?>')">
+                  <i class="fa-solid fa-delete-left"></i>
+                </span></td>
             </tr>
             <?php }?>
         </tbody>

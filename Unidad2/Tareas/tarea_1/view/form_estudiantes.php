@@ -10,7 +10,7 @@
                             <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
                             <input type="text" class="form-control mt-4" placeholder="Matricula" name="matricula" required>
                             <select name="sexo" id="" class="form-select mt-4" required>
-                                <option value="">Sexo</option>
+                                <option value="0">Sexo</option>
                                 <option value="hombre">Hombre</option>
                                 <option value="mujer">Mujer</option>
                             </select>
