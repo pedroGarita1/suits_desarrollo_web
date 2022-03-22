@@ -4,5 +4,6 @@
 
 <script src="public/lib/jquery3.js"></script>
 <script src="public/lib/b5/js/bootstrap.min.js"></script>
+<script src="public/lib/sweetalert2.js"></script>
 <script src="public/lib/fa/js/all.js"></script>
 <script src="public/js/controller.js"></script>

@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once "../app/conector.php";
     require_once "../class/Personas.php";
 
@@ -25,6 +26,7 @@
         header("location:../index.php");
     }else{
         if($Personas->insetar_registro($datos) ==1){
+            $_SESSION['insertado'] = 1;
             header("location:../index.php");
         }else{
             echo "fallo al insertar el registro";
