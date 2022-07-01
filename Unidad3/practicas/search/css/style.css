@@ -1,0 +1,53 @@
+.cuerpo {
+    background-color: aqua;
+}
+
+.cuerpo2 {
+    background-color: darkgray;
+}
+
+.mapa_word path {
+    margin-top: 0px;
+    stroke: rgb(19, 18, 18);
+    stroke-width: 2px;
+}
+
+.asia path {
+    fill: rgb(49, 0, 49);
+}
+
+.asia path:hover {
+    fill: rgb(255, 10, 255);
+}
+
+.america path {
+    fill: rgb(0, 0, 48);
+}
+
+.america path:hover {
+    fill: blue;
+}
+
+.oseania path {
+    fill: rgb(0, 58, 0);
+}
+
+.oseania path:hover {
+    fill: rgb(5, 255, 5);
+}
+
+.europa path {
+    fill: rgb(78, 78, 1);
+}
+
+.europa path:hover {
+    fill: yellow;
+}
+
+.africa path {
+    fill: rgb(66, 1, 1);
+}
+
+.africa path:hover {
+    fill: red;
+}

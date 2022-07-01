@@ -16,46 +16,13 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css">
     <title>Datos direccion</title>
 </head>
-<body>
+<body class="bg-dark">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
-                <form action="" method="POST">
-                    
-                </form>
-            </div>
-            <div class="col-md-12 mt-5">
-                <table class="table table-hover" id="t_direcciones">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Apellido Paterno</th>
-                            <th>Apellido Materno</th>
-                            <th>Calle</th>
-                            <th>Colonia</th>
-                            <th>Delegacion</th>
-                            <th>Estado</th>
-                            <th>CP</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <?php
-                        foreach($datos AS $item):
-                    ?>
-                        <tr>
-                            <td><?= $item['nombrePersona']?></td>
-                            <td><?= $item['paterno']?></td>
-                            <td><?= $item['materno']?></td>
-                            <td><?= $item['calle']?></td>
-                            <td><?= $item['colonia']?></td>
-                            <td><?= $item['delegacion']?></td>
-                            <td><?= $item['estado']?></td>
-                            <td><?= $item['cp']?></td>
-                        </tr>
-                    <?php endforeach;?>
-                    </tbody>
-                </table>
-            </div>
+        <?php
+            require_once 'view/view_formulario.php';
+            require_once 'view/view_tabla.php';
+        ?>
         </div>
     </div>
 
